@@ -1,0 +1,80 @@
+.wrapper{
+    background-color: rgb(103, 97, 97);
+}
+
+/* share modal */
+
+.mainbox{
+    width: 20rem;
+    height: 12rem;
+    border: 2px solid red;
+    background-color: rgba(7, 7, 7, 0.75);
+    border-radius: 0.5rem;
+    
+    
+}
+.top-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(79, 76, 76);
+}
+.top-box h1{
+    font-weight: 700;
+    color: white;
+    font-size: 1.2rem;
+   
+}
+
+.close:hover{
+    cursor: pointer;
+    
+}
+.bottom-box{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.bottom-box h3{
+    font-weight:500;
+    color: white;
+
+
+}
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.facebook{
+    border: 3px solid rgb(95, 95, 224);
+    color: rgb(95, 95, 224);
+    padding:0.5rem ;
+    border-radius: 0.25rem;
+}
+.whatsapp{
+    border: 3px solid rgb(49, 161, 49);
+    color:  rgb(49, 161, 49);
+    padding:0.5rem ;
+    border-radius: 1rem;
+}
+.twitter{
+    border: 3px solid rgb(82, 170, 205);
+    color:  skyblue;
+    padding:0.5rem ;
+    border-radius: 1rem;
+}
+.instagram{
+    border: 3px solid rgb(235, 102, 102);
+    color: red ;
+    padding:0.5rem ;
+    border-radius: 1rem;
+}
