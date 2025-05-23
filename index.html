@@ -4,68 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>share modle</title>
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
      <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <div class=" wrapper w-screen h-screen   flex justify-center  relative"> 
-        <div class="flex border-1  solid black absolute top-30 w-65 items-center flex-col gap-5 bg-gray-400 rounded-2xl"> 
-            <div class=" mt-10">
-                <img src="image/my photo.jpeg" alt="" class="w-20 rounded-full ">
+    <div class=" wrapper "> 
+        <div class=" container"> 
+            <div class="profile-image">
+                <img src="image/my photo.jpeg" alt="" >
             </div>
-            <div ><h1 class="font-[600] text-white">Shivang Dahiya</h1> </div>
-            <div > <p class="text-white text-xs">Engineer, Developer</p></div>
+            <div class="candidate-name"><h1>Shivang Dahiya</h1> </div>
+            <div > <p class="skills">Engineer, Developer</p></div>
            
-            <div class=" flex gap-6 mt-2 mb-10">
-                <div onclick="openModal()" class="w-25 h-6 border-1 border-solid text-xs flex justify-end items-center hover:bg-white hover: cursor-pointer rounded-sm">
-                     <div>
-                        <i class="fa-solid fa-share "></i>
+            <div class="button-box">
+                <button onclick="openModal()" class="left-button buttons">
+                    
+                     
+                     <i class="fa-solid fa-share  "></i>
 
-                     </div>
+                     
                      <p>Share My Profile</p>
-                </div>
-                <div class="w-25  h-6 border-1 border-solid hover:bg-white  flex justify-center items-center hover: cursor-pointer rounded-sm"><p class="text-xs">Follow Me</p></div>
+                     
+                </button>
+                <button class="right-button buttons">
+                    <p>Follow Me</p>
+
+                </button>
+                
             </div>
         
          </div>
 
-    </div>
+    
 
 
 
     <!-- modal conteant -->
-   <div class="mainbox">
+      <div class="modal">
     <div class="top-box ">
         <div class="heading"> <h1> Share My Profile</h1></div>
-        <div class="icon ">
-            <i class="fa-solid fa-xmark close"></i>
-        </div>
+        <button onclick="closeModal()" class="cross-icon ">
+            <i  class="fa-solid fa-xmark "></i>
+        </button>
     </div>
     <!-- bottom box -->
-     <div class="bottom-box">
+     <div class="bottom-box ">
         <div class="mini-heading"><h3> share this via</h3></div>
         <div class="social-icon">
-            <a href="#">
+            <a href="#" target="_blank">
                 <i class="fab facebook fa-facebook-f"></i>
             </a>
-            <a href="#">
+            <a href="#" target="_blank">
                 <i class="fab whatsapp fa-whatsapp"></i>
             </a>
             
-            <a href="#">
+            <a href="#" target="_blank">
                 <i class="fab twitter fa-twitter"></i>
             </a>
-            <a href="#">
+            <a href="#" target="_blank">
                 <i class="fab instagram fa-instagram"></i>
             </a>
 
         </div>
      </div>
 
-   </div>
+      </div>
+    </div>
+   <!-- overlay ---- close model any click  -->
+   <div class="overlay" onclick="closeModal()"></div>
+
+   <script src="index.js"></script>
 
 
 </body>

@@ -1,15 +1,95 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .wrapper{
-    background-color: rgb(103, 97, 97);
+    background-color: rgb(42, 36, 36);
+    width: 100vw; 
+    height: 100vh;  
+    display: flex;  
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.container{
+    position: absolute;
+    display: flex;
+    border: 1px solid black;
+    top: 30%;
+    width: 250px;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(46, 43, 43);
+    border-radius: 10px;
+    gap: 1.5rem;
+}
+.profile-image img{
+    margin-top:3rem;
+    border-radius: 100%;
+    width: 8rem;
+   
+}
+
+.candidate-name{
+    font-weight: 600;
+    color: white;
+    font-size: 0.65rem;
+    
+}
+.skills{
+    color: white;
+    font-size: 0.5rem;
+    margin-top: -10px;
+}
+.button-box{
+    display: flex;
+    gap: 25px;
+}
+.buttons{
+    width: 5.2rem;
+    height:1.5rem;
+    font-size: 0.5rem;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0.25rem;
+    cursor: pointer;
+    gap: 0.15rem;
+    overflow: hidden;
+    margin-bottom: 3rem;
+   
+   
+}
+.buttons:hover{
+    background-color: rgba(223, 211, 211, 0.642);
+}
+
+.right-button{
+    justify-content: center;
+    
 }
 
 /* share modal */
 
-.mainbox{
+.modal{
     width: 20rem;
     height: 12rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: rgba(7, 7, 7, 0.75);
     border-radius: 0.5rem;
+    scale: 0;
+    position:fixed;
+    top: 53%;
+    
+    z-index: 2;
+    
+    transition: 0.5s;
     
     
 }
@@ -26,8 +106,15 @@
     font-size: 1.2rem;
    
 }
+.cross-icon{
+    font-weight: 800;
+    font-size: 1rem;
+    color: white;
+    border: hidden;
+    background-color:rgba(7, 7, 7, 0.75);
+}
 
-.close:hover{
+.cross-icon:hover{
     cursor: pointer;
     
 }
@@ -78,3 +165,31 @@
     padding:0.5rem ;
     border-radius: 1rem;
 }
+
+
+
+/*   action on modal with java script */
+
+
+    .overlay {
+  position: fixed;         
+  top: 0;
+  left: 0;
+  width: 100vw;            
+  height: 100vh;           
+  background-color: rgba(2, 2, 2, 0.703);  
+  z-index: 1;           
+  scale: 0;
+  transition: 0.5 ease-in-out;
+  pointer-events: none;
+}
+
+.overlayactive{
+    scale: 1;
+    pointer-events: initial;
+}
+
+.active{
+    scale:1;
+}
+
